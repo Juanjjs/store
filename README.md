@@ -20,7 +20,9 @@ A continuación describo algunas observaciones importantes de la prueba técnica
 
 **Descripción**
 La carpeta Controllers de Visual Studio contiene las tareas: Informacion personal de usuario, listado de productos, agregar al carro de compras, obtener el carro de compras, proceso de orden y detalles de la orden. CAda tarea hace la consulta hacia la base de datos que llamé store. Esta contiene cuatro tablas:
-* dbo.orders
-* dbo.personal_information
-* dbo.products
-* dbo.shopping_cart
+* dbo.orders: Proceso de facturación (item 2)
+* dbo.personal_information: Aloja la informacion del usuario
+* dbo.products: Listado de productos ofertados
+* dbo.shopping_cart: Productos agregados al carro de compras
+
+La verificación la realicé mediante Postman, donde este me muestra el archivo JSON de los productos que voy agregando al carrito y se descuentan del listado de productos disponibles. Asi como tambien, agrega y suma el precio de los productos solicitados. 
