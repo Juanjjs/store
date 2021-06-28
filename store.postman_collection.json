@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "4f0f49e2-bc12-4728-b658-57766aeef821",
+		"name": "store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:55651/api/Authenticate/listProducts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:55651/api/Authenticate/listProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55651",
+					"path": [
+						"api",
+						"Authenticate",
+						"listProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55651/api/Authenticate/personalInformation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:55651/api/Authenticate/personalInformation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55651",
+					"path": [
+						"api",
+						"Authenticate",
+						"personalInformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55651/api/Authenticate/addToCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "shoppingCartId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "productId",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "units",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:55651/api/Authenticate/addToCart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55651",
+					"path": [
+						"api",
+						"Authenticate",
+						"addToCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55651/api/Authenticate/getCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "shoppingCartId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:55651/api/Authenticate/getCart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55651",
+					"path": [
+						"api",
+						"Authenticate",
+						"getCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55651/api/Authenticate/processOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "shoppingCartId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:55651/api/Authenticate/processOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55651",
+					"path": [
+						"api",
+						"Authenticate",
+						"processOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55651/api/Authenticate/orderDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "orderId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:55651/api/Authenticate/orderDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55651",
+					"path": [
+						"api",
+						"Authenticate",
+						"orderDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
